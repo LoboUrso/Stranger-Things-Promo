@@ -146,6 +146,10 @@ ul {
   }
 }
 
+.cidadesInfinito ul:nth-child(2), .cidadesInfinito ul:nth-child(3) {
+  display: none;
+}
+
 .hero:before{
   content: "";
   background: linear-gradient(180deg, rgba(12, 1, 2, 0.00) 0%, #0C0102 100%);
@@ -226,6 +230,7 @@ ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 24px;
   }
 }
 
@@ -320,6 +325,26 @@ footer {
     align-items: start;
     justify-content: end;
   }
+
+  .secaoObrigado {
+    overflow: hidden;
+  }
+
+  .cidadesInfinito {
+    width: max-content;
+    display: flex;
+  }
+
+  .cidadesInfinito ul {
+    display: flex;
+    gap: 40px;
+    padding-left: 40px;
+    animation: textoInfinito 20s infinite linear;
+  }
+
+  .cidadesInfinito ul:nth-child(2) {
+    display: flex;
+  }
 }
 
 @media (max-width: 600px) {
@@ -401,16 +426,25 @@ footer {
     }
   }
 
-  .secaoObrigado {
-    margin: 40px 0px 60px;
-    h2 {
-      text-align: center;
-    }
-    ul {
-      width: max-content;
-      gap: 32px;
-    }
-  }
+.secaoObrigado {
+  overflow: hidden;
+}
+
+.cidadesInfinito {
+  width: max-content;
+  display: flex;
+}
+
+.cidadesInfinito ul {
+  display: flex;
+  gap: 40px;
+  padding-left: 40px;
+  animation: textoInfinito 20s infinite linear;
+}
+
+.cidadesInfinito ul:nth-child(2) {
+  display: flex;
+}
 
   footer {
     padding-top: 40px;
